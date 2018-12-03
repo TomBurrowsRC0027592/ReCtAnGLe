@@ -16,5 +16,14 @@ namespace ReCtAnGLe
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int w, h;
+            w = int.Parse(textBox1.Text);
+            h = int.Parse(textBox2.Text);
+            int area = h * w;
+            textBox3.Text = area.ToString();
+        }
     }
 }
